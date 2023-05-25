@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平方向上 */
+    align-items: center; /* 竖直方向上 */ 
+}
+
+.block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    
+    text-align: center;
+    font-size: 40px;
+    font-family: Tahoma;
+
+    border-top: solid #687291 1px;
+    margin: 5px;
+
+    background-color: rgb(213, 211, 211);
+}
+
+.final {
+    background-color: #687291;
+
+    border-top: solid black 4px;
+}

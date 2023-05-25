@@ -1,0 +1,32 @@
+body {
+    display: flex;
+
+}
+
+.block {
+    display: inline-block;
+
+    width: 100px;
+    height: 150px;
+    background-color: #eeeff2;
+
+    font-size: 40px;
+    font-family: Tahoma;
+    cursor: pointer;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-left: dotted #D0D0FF 10px;
+}
+
+.block:hover {
+    background-color: yellow;
+    color: goldenrod;
+}
+
+.final {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
