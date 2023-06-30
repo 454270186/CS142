@@ -8,7 +8,8 @@
 
 /* eslint-env browser, node */
 
-// Result message for Problems 1-3
+(function() {
+	// Result message for Problems 1-3
 var p1Message = "SUCCESS";
 var p2Message = "SUCCESS";
 var p3Message = "SUCCESS";
@@ -174,17 +175,30 @@ console.log("Test Problem 3:", p3Message);
 
 // Store the result back into the global space under the object name
 // cs142Project2Results
-window.cs142Project2Results = {
-  p1Message: p1Message,
-  p2Message: p2Message,
-  p3Message: p3Message,
-};
+// window.cs142Project2Results = {
+//   p1Message: p1Message,
+//   p2Message: p2Message,
+//   p3Message: p3Message,
+// };
+
+var cs142Project2 = {
+	cs142MakeMultiFilter: cs142MakeMultiFilter,
+	Cs142TemplateProcessor: Cs142TemplateProcessor,
+	cs142Project2Results: {
+		p1Message: p1Message,
+		p2Message: p2Message,
+		p3Message: p3Message,
+	},
+}
 
 // Once the browser loads our companion HTML in cs142-test-project2.html we
 // update it with the results of our testing. This code will make more
 // sense after the next project.
-window.onload = function () {
-  document.getElementById("cs142p1").innerHTML = p1Message;
-  document.getElementById("cs142p2").innerHTML = p2Message;
-  document.getElementById("cs142p3").innerHTML = p3Message;
-};
+// window.onload = function () {
+//   document.getElementById("cs142p1").innerHTML = p1Message;
+//   document.getElementById("cs142p2").innerHTML = p2Message;
+//   document.getElementById("cs142p3").innerHTML = p3Message;
+// };
+window.cs142Project2 = cs142Project2
+})()
+
